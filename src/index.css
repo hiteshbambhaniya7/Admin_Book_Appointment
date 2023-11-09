@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .page-box .app-container .main-content{
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+
+} */
