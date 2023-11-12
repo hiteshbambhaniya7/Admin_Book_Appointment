@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import HomePage from './home_page';
 import Appointments from './appointments';
 import Doctors from './Doctors';
@@ -9,7 +9,7 @@ import EditAccount from './edit_account';
 
 function MyRoute() {
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <Routes>
         <Route index element={<HomePage />} />
         
@@ -19,7 +19,7 @@ function MyRoute() {
         <Route path="/edit-account" element={<EditAccount />} />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
